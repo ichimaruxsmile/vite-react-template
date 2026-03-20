@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { trpc } from "./trpc";
+import Chat from "./Chat";
 import "./App.css";
 
 function App() {
@@ -110,6 +111,9 @@ function App() {
 					<p className="empty-state">No todos yet. Add one above!</p>
 				)}
 			</section>
+
+			{/* Chat Section */}
+			<Chat />
 
 			<footer className="footer">
 				<p>
